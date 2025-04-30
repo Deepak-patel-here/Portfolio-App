@@ -149,7 +149,7 @@ Contributions to the app are welcome! If you would like to contribute, please fo
 
 ## Contact
 
-You can reach the creator of this app at [Deepak Patel]([https://www.linkedin.com/in/deepak-patel-555671282/]).
+You can reach the creator of this app at([https://www.linkedin.com/in/deepak-patel-555671282/]).
 
 ##Demo Video
 
@@ -157,4 +157,4 @@ you can take a look of the demo video of this portfolio app ([https://drive.goog
 
 ## APK
 
-You can download the apk of my app by follow this link : ([https://drive.google.com/file/d/1ZqgRlEucP0MFxBB5XNlARiKtcudV7YyL/view?usp=sharing])
+You can download the apk of my app by follow this link : ([https://drive.google.com/file/d/1P35npMIi7ZEBJ5RA1yO_FU2O7ugVUbfb/view?usp=sharing])
