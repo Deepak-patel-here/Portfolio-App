@@ -51,7 +51,7 @@ fun TopBar(modifier: Modifier = Modifier) {
                     painter = painterResource(R.drawable.menuport),
                     contentDescription = null,
                     modifier = Modifier
-                        .size(30.dp),
+                        .size(25.dp),
                     colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.onSurface)
                 )
             }

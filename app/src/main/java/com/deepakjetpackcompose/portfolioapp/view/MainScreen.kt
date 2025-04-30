@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 import com.deepakjetpackcompose.portfolioapp.util.DownLoadButton
 import com.deepakjetpackcompose.portfolioapp.util.IntroText
+import com.deepakjetpackcompose.portfolioapp.util.LastScroll
 import com.deepakjetpackcompose.portfolioapp.util.ProjectButton
 import com.deepakjetpackcompose.portfolioapp.util.ProjectIntro
 import com.deepakjetpackcompose.portfolioapp.util.ShortIntro
@@ -64,6 +65,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
                             Spacer(Modifier.height(50.dp))
                             ProjectIntro()
                             Spacer(Modifier.height(30.dp))
+                            LastScroll()
                         }
                     }
 

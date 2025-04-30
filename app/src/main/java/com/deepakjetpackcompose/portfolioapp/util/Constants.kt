@@ -1,6 +1,6 @@
 package com.deepakjetpackcompose.portfolioapp.util
 
-const val abouts="Hi! I'm Deepak Mora, an Android Developer with a passion for building intuitive, high-performance mobile applications. I enjoy collaborating with teams to turn creative ideas into real, functional products that provide meaningful experiences to users.\n" +
+const val abouts="Hi! I'm Deepak Patel, an Android Developer with a passion for building intuitive, high-performance mobile applications. I enjoy collaborating with teams to turn creative ideas into real, functional products that provide meaningful experiences to users.\n" +
         "As a developer, I believe a great app is more than just code — it's about creating seamless interactions that delight and engage.\n" +
         "In my development process, I work with modern tools and frameworks like Kotlin, Jetpack Compose, Firebase, and Ktor to craft scalable and maintainable Android applications. "
 
