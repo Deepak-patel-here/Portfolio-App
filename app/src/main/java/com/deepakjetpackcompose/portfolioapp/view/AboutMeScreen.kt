@@ -34,6 +34,8 @@ import com.deepakjetpackcompose.portfolioapp.util.ClickableEmail
 import com.deepakjetpackcompose.portfolioapp.util.Di
 import com.deepakjetpackcompose.portfolioapp.util.Firebase
 import com.deepakjetpackcompose.portfolioapp.util.SkillText
+import com.deepakjetpackcompose.portfolioapp.util.ToolScreen
+import com.deepakjetpackcompose.portfolioapp.util.WorkAndEdu
 import com.deepakjetpackcompose.portfolioapp.util.abouts
 import com.deepakjetpackcompose.portfolioapp.util.emailId
 import com.deepakjetpackcompose.portfolioapp.util.fullAbouts
@@ -115,6 +117,10 @@ fun AboutMeScreen(modifier: Modifier = Modifier) {
                     )
                 )
             )
+            Spacer(Modifier.height(70.dp))
+            ToolScreen()
+            Spacer(Modifier.height(70.dp))
+            WorkAndEdu()
 
 
         }

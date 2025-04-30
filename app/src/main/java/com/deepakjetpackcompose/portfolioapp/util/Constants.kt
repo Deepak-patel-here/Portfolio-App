@@ -18,3 +18,10 @@ const val emailId="Deepak.patel.23082005@gmail.com"
 const val room="I implement local persistence with Room, providing robust offline functionality and efficient data handling in Android apps."
 const val Di="I use Koin and Hilt to manage dependencies, leading to more modular, testable, and maintainable applications."
 const val Firebase="I integrate Firebase services like Authentication, Firestore, Realtime Database to add powerful backend features and analytics."
+const val android="This is my favourite tool, It helps me creating scalable and maintainable aaps."
+const val intellij="I use Intellij Idea for practicing language and making little bit of backend."
+const val edu="Bachelor of Computer Applications (BCA)\n" +
+        "Guru Gobind Singh Indraprastha University (GGSIPU)\n" +
+        "East Delhi, India\n" +
+        "Pursuing a degree in Computer Applications with a focus on mobile app development, programming fundamentals, and software engineering principles."
+const val work="Android Developer (Personal Projects\n"+"Built multiple Android applications using Kotlin and Jetpack Compose."
