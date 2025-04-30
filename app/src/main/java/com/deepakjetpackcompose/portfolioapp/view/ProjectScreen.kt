@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 import com.deepakjetpackcompose.portfolioapp.util.ProjectComponent
 import com.deepakjetpackcompose.portfolioapp.R
@@ -24,9 +25,9 @@ import com.deepakjetpackcompose.portfolioapp.util.newsapp
 import com.deepakjetpackcompose.portfolioapp.util.project1
 import com.deepakjetpackcompose.portfolioapp.util.techProject1
 
-@PreviewLightDark
+
 @Composable
-fun ProjectScreen(modifier: Modifier = Modifier) {
+fun ProjectScreen(navController: NavController,modifier: Modifier = Modifier) {
     PortfolioAppTheme {
         Column (modifier = Modifier.fillMaxWidth()
             .background(MaterialTheme.colorScheme.surfaceContainerLow)

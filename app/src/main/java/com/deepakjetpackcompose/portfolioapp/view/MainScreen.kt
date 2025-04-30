@@ -17,9 +17,12 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.deepakjetpackcompose.portfolioapp.Skill
+import com.deepakjetpackcompose.portfolioapp.navigation.NavigationDestination
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 import com.deepakjetpackcompose.portfolioapp.util.ApiSkill2
 import com.deepakjetpackcompose.portfolioapp.util.DownLoadButton
@@ -36,7 +39,8 @@ import com.deepakjetpackcompose.portfolioapp.util.versionSkill3
 
 @PreviewLightDark
 @Composable
-fun MainScreen(modifier: Modifier = Modifier) {
+fun MainScreen(navController: NavController,modifier: Modifier = Modifier) {
+    val context= LocalContext.current
     PortfolioAppTheme {
 
         Column(
@@ -64,9 +68,9 @@ fun MainScreen(modifier: Modifier = Modifier) {
                         modifier = modifier.fillMaxWidth(),
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        ProjectButton()
+                        ProjectButton(onClick={navController.navigate(NavigationDestination.Projects.route)})
                         Spacer(Modifier.height(10.dp))
-                        DownLoadButton()
+                        DownLoadButton(context = context)
                         Spacer(Modifier.height(20.dp))
                         ShortIntro()
                         Spacer(Modifier.height(50.dp))

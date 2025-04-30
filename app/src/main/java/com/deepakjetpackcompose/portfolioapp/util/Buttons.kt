@@ -1,5 +1,6 @@
 package com.deepakjetpackcompose.portfolioapp.util
 
+import android.content.Context
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -29,13 +30,13 @@ import com.deepakjetpackcompose.portfolioapp.ui.theme.Comic
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 import com.deepakjetpackcompose.portfolioapp.R
 
-@Preview
+
 @Composable
-fun ProjectButton(modifier: Modifier = Modifier) {
+fun ProjectButton(onClick:()->Unit,modifier: Modifier = Modifier) {
     PortfolioAppTheme {
         Box() {
             Button(
-                onClick = {},
+                onClick = {onClick()},
                 shape = RoundedCornerShape(5.dp),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary,
@@ -54,13 +55,15 @@ fun ProjectButton(modifier: Modifier = Modifier) {
 
 }
 
-@Preview
+
 @Composable
-fun DownLoadButton(modifier: Modifier = Modifier) {
+fun DownLoadButton(context: Context,modifier: Modifier = Modifier) {
     PortfolioAppTheme {
         Box() {
             OutlinedButton(
-                onClick = {},
+                onClick = {
+                    downloadResume(context = context, fileUrl ="https://drive.google.com/uc?export=download&id=1AjkawlJh2frc6mPq6DwQjbO1oHY2jaSS")
+                },
                 shape = RoundedCornerShape(5.dp),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color.Transparent

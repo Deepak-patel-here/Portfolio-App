@@ -24,6 +24,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.deepakjetpackcompose.portfolioapp.R
 import com.deepakjetpackcompose.portfolioapp.Skill
 import com.deepakjetpackcompose.portfolioapp.ui.theme.Comic
@@ -44,9 +45,9 @@ import com.deepakjetpackcompose.portfolioapp.util.responsiveSkill1
 import com.deepakjetpackcompose.portfolioapp.util.room
 import com.deepakjetpackcompose.portfolioapp.util.versionSkill3
 
-@PreviewLightDark
+
 @Composable
-fun AboutMeScreen(modifier: Modifier = Modifier) {
+fun AboutMeScreen(navController: NavController,modifier: Modifier = Modifier) {
     PortfolioAppTheme {
         Column (modifier = Modifier.fillMaxWidth()
             .background(MaterialTheme.colorScheme.surfaceContainerLow)

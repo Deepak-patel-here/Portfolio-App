@@ -1,5 +1,6 @@
 package com.deepakjetpackcompose.portfolioapp.navigation
 
+import androidx.compose.animation.SizeTransform
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
@@ -16,13 +17,13 @@ fun NavigationHelper(navController: NavHostController,modifier: Modifier = Modif
 
     NavHost(navController = navController, startDestination = NavigationDestination.Home.route ) {
         composable (route = NavigationDestination.Home.route){
-            MainScreen()
+            MainScreen(navController=navController)
         }
         composable (route = NavigationDestination.About.route){
-            AboutMeScreen()
+            AboutMeScreen(navController=navController)
         }
         composable (route = NavigationDestination.Projects.route){
-            ProjectScreen()
+            ProjectScreen(navController=navController)
         }
     }
 
