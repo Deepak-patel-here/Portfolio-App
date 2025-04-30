@@ -77,7 +77,7 @@ fun ContactForm() {
         Button(
             onClick = {
                 val intent = Intent(Intent.ACTION_SENDTO).apply {
-                    data = Uri.parse("mailto:youremail@example.com") // Replace with your email
+                    data = Uri.parse("deepak.patel.23082005@gmail.com") // Replace with your email
                     putExtra(Intent.EXTRA_SUBJECT, "New message from $name")
                     putExtra(
                         Intent.EXTRA_TEXT,
