@@ -27,16 +27,18 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.deepakjetpackcompose.portfolioapp.ui.theme.Comic
 import com.deepakjetpackcompose.portfolioapp.R
 import com.deepakjetpackcompose.portfolioapp.Skill
+import com.deepakjetpackcompose.portfolioapp.navigation.NavigationDestination
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 
-@Preview
-@Composable
-fun SkillText(skills:List<Skill>, modifier: Modifier = Modifier) {
 
-    PortfolioAppTheme {
+@Composable
+fun SkillText(navController: NavController,skills:List<Skill>, modifier: Modifier = Modifier) {
+
+
         Column(modifier = Modifier
             .fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally) {
@@ -48,9 +50,11 @@ fun SkillText(skills:List<Skill>, modifier: Modifier = Modifier) {
                 )
             SkillPrompt(skills)
             Spacer(Modifier.height(40.dp))
-            SkillButton(onClick = {}, name = "More Skills")
+            SkillButton(onClick = {
+                navController.navigate(NavigationDestination.About.route)
+            }, name = "More Skills")
         }
-    }
+
 
 }
 

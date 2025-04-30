@@ -15,7 +15,7 @@ import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 @Preview
 @Composable
 fun IntroText(modifier: Modifier = Modifier) {
-    PortfolioAppTheme {
+
         Column {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
@@ -38,6 +38,6 @@ fun IntroText(modifier: Modifier = Modifier) {
                 color = MaterialTheme.colorScheme.onSurface
                 )
         }
-    }
+
 
 }

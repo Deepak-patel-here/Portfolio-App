@@ -33,13 +33,13 @@ import com.deepakjetpackcompose.portfolioapp.R
 @PreviewLightDark
 @Composable
 fun WorkAndEdu(modifier: Modifier = Modifier) {
-    PortfolioAppTheme {
+
         Column(modifier = Modifier.fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally) {
             Text("Experience & Education",
                 color = MaterialTheme.colorScheme.primary,
                 fontFamily = Comic,
-                fontSize = 30.sp)
+                fontSize = 26.sp)
 
             Spacer(Modifier.height(70.dp))
             WorkTemplate(img=R.drawable.education, task = "Education", desc = edu)
@@ -47,7 +47,7 @@ fun WorkAndEdu(modifier: Modifier = Modifier) {
             WorkTemplate(img=R.drawable.briefcase, task = "Work Experience", desc = work)
 
         }
-    }
+
     
 }
 

@@ -29,7 +29,7 @@ import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 
 @Composable
 fun TopBar(onClick:()-> Unit,modifier: Modifier = Modifier) {
-    PortfolioAppTheme {
+
         Row(
             modifier = modifier
                 .fillMaxWidth()
@@ -57,6 +57,6 @@ fun TopBar(onClick:()-> Unit,modifier: Modifier = Modifier) {
             }
 
         }
-    }
+
 
 }

@@ -33,7 +33,7 @@ import com.deepakjetpackcompose.portfolioapp.R
 
 @Composable
 fun ProjectButton(onClick:()->Unit,modifier: Modifier = Modifier) {
-    PortfolioAppTheme {
+
         Box() {
             Button(
                 onClick = {onClick()},
@@ -51,14 +51,14 @@ fun ProjectButton(onClick:()->Unit,modifier: Modifier = Modifier) {
                 )
             }
         }
-    }
+
 
 }
 
 
 @Composable
 fun DownLoadButton(context: Context,modifier: Modifier = Modifier) {
-    PortfolioAppTheme {
+
         Box() {
             OutlinedButton(
                 onClick = {
@@ -87,7 +87,7 @@ fun DownLoadButton(context: Context,modifier: Modifier = Modifier) {
                 }
 
             }
-        }
+
     }
 
 }

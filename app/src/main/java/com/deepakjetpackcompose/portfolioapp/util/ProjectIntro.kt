@@ -17,13 +17,15 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.deepakjetpackcompose.portfolioapp.ui.theme.Comic
 import com.deepakjetpackcompose.portfolioapp.R
+import com.deepakjetpackcompose.portfolioapp.navigation.NavigationDestination
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 
 @PreviewLightDark
 @Composable
-fun ProjectIntro(modifier: Modifier = Modifier) {
+fun ProjectIntro(navController: NavController,modifier: Modifier = Modifier) {
     PortfolioAppTheme {
         Column (horizontalAlignment = Alignment.CenterHorizontally){
             Text(
@@ -39,7 +41,9 @@ fun ProjectIntro(modifier: Modifier = Modifier) {
             Spacer(Modifier.height(30.dp))
             ProjectCard(R.drawable.reminder)
             Spacer(Modifier.height(30.dp))
-            SkillButton(onClick = {}, name = "More Projects")
+            SkillButton(onClick = {
+                navController.navigate(NavigationDestination.Projects.route)
+            }, name = "More Projects")
         }
     }
     

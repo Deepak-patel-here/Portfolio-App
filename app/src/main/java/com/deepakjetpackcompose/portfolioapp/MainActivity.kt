@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
             val isDark = darkViewModel.isDarkMode.collectAsState()
             PortfolioAppTheme (darkTheme = isDark.value){
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    AppScreen(modifier = Modifier.padding(innerPadding))
+                    AppScreen(darkViewModel=darkViewModel,modifier = Modifier.padding(innerPadding))
                 }
             }
         }

@@ -10,6 +10,8 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
@@ -24,11 +26,12 @@ import com.deepakjetpackcompose.portfolioapp.util.newsTech
 import com.deepakjetpackcompose.portfolioapp.util.newsapp
 import com.deepakjetpackcompose.portfolioapp.util.project1
 import com.deepakjetpackcompose.portfolioapp.util.techProject1
+import com.deepakjetpackcompose.portfolioapp.viewmodel.DarkViewModel
 
 
 @Composable
 fun ProjectScreen(navController: NavController,modifier: Modifier = Modifier) {
-    PortfolioAppTheme {
+
         Column (modifier = Modifier.fillMaxWidth()
             .background(MaterialTheme.colorScheme.surfaceContainerLow)
             .verticalScroll(rememberScrollState())
@@ -57,6 +60,6 @@ fun ProjectScreen(navController: NavController,modifier: Modifier = Modifier) {
             LastScroll()
 
         }
-    }
+
 
 }

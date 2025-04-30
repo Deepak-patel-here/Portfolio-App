@@ -40,7 +40,7 @@ import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 @PreviewLightDark
 @Composable
 fun ToolScreen(modifier: Modifier = Modifier) {
-    PortfolioAppTheme {
+
         Column (modifier= Modifier.fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally){
             Text(
@@ -57,7 +57,7 @@ fun ToolScreen(modifier: Modifier = Modifier) {
             ToolTemplate(img = R.drawable.programming, tool = "Intellij Idea", desc = intellij,i=3)
 
         }
-    }
+
 
 }
 

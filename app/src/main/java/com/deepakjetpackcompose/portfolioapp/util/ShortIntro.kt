@@ -32,15 +32,18 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 import com.deepakjetpackcompose.portfolioapp.R
+import com.deepakjetpackcompose.portfolioapp.navigation.NavigationDestination
 import com.deepakjetpackcompose.portfolioapp.ui.theme.Comic
+import com.deepakjetpackcompose.portfolioapp.viewmodel.DarkViewModel
 
-@PreviewLightDark
+
 @Composable
-fun ShortIntro(modifier: Modifier = Modifier) {
+fun ShortIntro(navController: NavController,modifier: Modifier = Modifier) {
 
-    PortfolioAppTheme {
+
         Column (modifier= Modifier
             .fillMaxWidth()
             .background(MaterialTheme.colorScheme.surfaceContainerHighest, shape = RoundedCornerShape(10.dp))
@@ -77,7 +80,9 @@ fun ShortIntro(modifier: Modifier = Modifier) {
             )
 
             Spacer(Modifier.height(30.dp))
-            OutlinedButton(onClick = {},
+            OutlinedButton(onClick = {
+                navController.navigate(NavigationDestination.About.route)
+            },
                 shape = RoundedCornerShape(5.dp),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color.Transparent
@@ -99,6 +104,6 @@ fun ShortIntro(modifier: Modifier = Modifier) {
 
 
         }
-    }
+
 
 }

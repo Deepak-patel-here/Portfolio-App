@@ -15,6 +15,8 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -36,12 +38,13 @@ import com.deepakjetpackcompose.portfolioapp.util.SummaryText
 import com.deepakjetpackcompose.portfolioapp.util.TopBar
 import com.deepakjetpackcompose.portfolioapp.util.responsiveSkill1
 import com.deepakjetpackcompose.portfolioapp.util.versionSkill3
+import com.deepakjetpackcompose.portfolioapp.viewmodel.DarkViewModel
 
-@PreviewLightDark
+
 @Composable
 fun MainScreen(navController: NavController,modifier: Modifier = Modifier) {
     val context= LocalContext.current
-    PortfolioAppTheme {
+
 
         Column(
             modifier = Modifier
@@ -72,9 +75,9 @@ fun MainScreen(navController: NavController,modifier: Modifier = Modifier) {
                         Spacer(Modifier.height(10.dp))
                         DownLoadButton(context = context)
                         Spacer(Modifier.height(20.dp))
-                        ShortIntro()
+                        ShortIntro(navController=navController)
                         Spacer(Modifier.height(50.dp))
-                        SkillText(
+                        SkillText(navController=navController,
                             skills = listOf(
                                 Skill(
                                     img = R.drawable.iphone,
@@ -94,7 +97,7 @@ fun MainScreen(navController: NavController,modifier: Modifier = Modifier) {
                             )
                         )
                         Spacer(Modifier.height(50.dp))
-                        ProjectIntro()
+                        ProjectIntro(navController=navController)
                         Spacer(Modifier.height(30.dp))
                         LastScroll()
                     }
@@ -104,6 +107,6 @@ fun MainScreen(navController: NavController,modifier: Modifier = Modifier) {
 
         }
 
-    }
+
 
 }

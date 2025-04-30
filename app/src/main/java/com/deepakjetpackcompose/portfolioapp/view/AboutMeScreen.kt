@@ -16,6 +16,8 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
@@ -44,11 +46,12 @@ import com.deepakjetpackcompose.portfolioapp.util.fullAbouts
 import com.deepakjetpackcompose.portfolioapp.util.responsiveSkill1
 import com.deepakjetpackcompose.portfolioapp.util.room
 import com.deepakjetpackcompose.portfolioapp.util.versionSkill3
+import com.deepakjetpackcompose.portfolioapp.viewmodel.DarkViewModel
 
 
 @Composable
 fun AboutMeScreen(navController: NavController,modifier: Modifier = Modifier) {
-    PortfolioAppTheme {
+
         Column (modifier = Modifier.fillMaxWidth()
             .background(MaterialTheme.colorScheme.surfaceContainerLow)
             .verticalScroll(rememberScrollState())
@@ -128,6 +131,6 @@ fun AboutMeScreen(navController: NavController,modifier: Modifier = Modifier) {
 
 
         }
-    }
+
 
 }

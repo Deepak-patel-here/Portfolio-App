@@ -11,9 +11,10 @@ import androidx.navigation.compose.composable
 import com.deepakjetpackcompose.portfolioapp.view.AboutMeScreen
 import com.deepakjetpackcompose.portfolioapp.view.MainScreen
 import com.deepakjetpackcompose.portfolioapp.view.ProjectScreen
+import com.deepakjetpackcompose.portfolioapp.viewmodel.DarkViewModel
 
 @Composable
-fun NavigationHelper(navController: NavHostController,modifier: Modifier = Modifier) {
+fun NavigationHelper(darkViewModel: DarkViewModel,navController: NavHostController,modifier: Modifier = Modifier) {
 
     NavHost(navController = navController, startDestination = NavigationDestination.Home.route ) {
         composable (route = NavigationDestination.Home.route){
