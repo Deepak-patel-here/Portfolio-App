@@ -57,7 +57,6 @@ fun TopBar(modifier: Modifier = Modifier) {
             }
 
         }
-        Divider(Modifier.background(MaterialTheme.colorScheme.onSurface))
     }
 
 }

@@ -39,16 +39,13 @@ fun SkillText(modifier: Modifier = Modifier) {
         Column(modifier = Modifier
             .fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally) {
-            Box(modifier = Modifier
-                .fillMaxWidth()
-                .align(Alignment.CenterHorizontally)) {
                 Text(
                     "My Skills",
                     fontSize = 35.sp,
                     color = MaterialTheme.colorScheme.primary,
                     fontFamily = Comic
                 )
-            }
+
             Spacer(Modifier.height(30.dp))
             BoxSkill(img = R.drawable.iphone, skill = "Responsive UI",responsiveSkill1)
             Spacer(Modifier.height(30.dp))
