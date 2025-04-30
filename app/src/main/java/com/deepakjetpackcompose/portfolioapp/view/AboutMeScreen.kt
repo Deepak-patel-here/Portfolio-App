@@ -127,7 +127,7 @@ fun AboutMeScreen(navController: NavController,modifier: Modifier = Modifier) {
             Spacer(Modifier.height(70.dp))
             WorkAndEdu()
             Spacer(Modifier.height(70.dp))
-            LastScroll()
+            LastScroll(navController)
 
 
         }

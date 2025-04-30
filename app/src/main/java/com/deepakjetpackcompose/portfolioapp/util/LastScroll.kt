@@ -18,11 +18,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import com.deepakjetpackcompose.portfolioapp.navigation.NavigationDestination
 import com.deepakjetpackcompose.portfolioapp.ui.theme.Comic
 
-@PreviewLightDark
+
 @Composable
-fun LastScroll(modifier: Modifier = Modifier) {
+fun LastScroll(navController: NavController,modifier: Modifier = Modifier) {
     val context = LocalContext.current
     Column(modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally) {
@@ -38,25 +40,37 @@ fun LastScroll(modifier: Modifier = Modifier) {
             fontSize = 26.sp,
             fontWeight = FontWeight.SemiBold,
             fontFamily = Comic,
-            color = MaterialTheme.colorScheme.onSurface)
+            color = MaterialTheme.colorScheme.onSurface,
+            modifier= Modifier.clickable(onClick = {
+                navController.navigate(NavigationDestination.Home.route)
+            }))
         Spacer(Modifier.height(30.dp),)
         Text("About Me",
             fontSize = 26.sp,
             fontWeight = FontWeight.SemiBold,
             fontFamily = Comic,
-            color = MaterialTheme.colorScheme.primary)
+            color = MaterialTheme.colorScheme.primary,
+            modifier= Modifier.clickable(onClick = {
+                navController.navigate(NavigationDestination.About.route)
+            }))
         Spacer(Modifier.height(20.dp))
         Text("Projects",
             fontSize = 26.sp,
             fontWeight = FontWeight.SemiBold,
             fontFamily = Comic,
-            color = MaterialTheme.colorScheme.onSurface)
+            color = MaterialTheme.colorScheme.onSurface,
+            modifier= Modifier.clickable(onClick = {
+                navController.navigate(NavigationDestination.Projects.route)
+            }))
         Spacer(Modifier.height(30.dp))
         Text("Contact Me",
             fontSize = 26.sp,
             fontWeight = FontWeight.SemiBold,
             fontFamily = Comic,
-            color = MaterialTheme.colorScheme.primary)
+            color = MaterialTheme.colorScheme.primary,
+            modifier= Modifier.clickable(onClick = {
+                navController.navigate(NavigationDestination.Contacts.route)
+            }))
         Spacer(Modifier.height(30.dp))
         Text("Linked In",
             fontSize = 26.sp,

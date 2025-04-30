@@ -9,6 +9,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.deepakjetpackcompose.portfolioapp.view.AboutMeScreen
+import com.deepakjetpackcompose.portfolioapp.view.ContactScreen
 import com.deepakjetpackcompose.portfolioapp.view.MainScreen
 import com.deepakjetpackcompose.portfolioapp.view.ProjectScreen
 import com.deepakjetpackcompose.portfolioapp.viewmodel.DarkViewModel
@@ -25,6 +26,9 @@ fun NavigationHelper(darkViewModel: DarkViewModel,navController: NavHostControll
         }
         composable (route = NavigationDestination.Projects.route){
             ProjectScreen(navController=navController)
+        }
+        composable (route= NavigationDestination.Contacts.route){
+            ContactScreen(navController=navController)
         }
     }
 

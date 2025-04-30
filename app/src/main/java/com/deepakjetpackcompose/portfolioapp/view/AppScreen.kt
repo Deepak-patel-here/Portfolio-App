@@ -132,6 +132,28 @@ fun AppScreen(darkViewModel: DarkViewModel,modifier: Modifier = Modifier) {
                             }
                             Divider()
                             Spacer(Modifier.height(12.dp))
+                            Row (verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                modifier = Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 20.dp)
+                                    .clickable {
+                                        navController.navigate(NavigationDestination.Contacts.route) {
+                                            popUpTo(0)
+                                        }
+                                        scope.launch { sheetState.hide(); showSheet = false }
+                                    }){
+                                Text("Contacts", Modifier,
+                                    fontSize = 20.sp,
+                                    fontFamily = Comic,
+                                    color = MaterialTheme.colorScheme.onSurface)
+
+                                Icon(
+                                    imageVector = Icons.Default.KeyboardArrowRight,
+                                    contentDescription = null,
+                                    tint = MaterialTheme.colorScheme.onSurface
+                                )
+                            }
+                            Divider()
+                            Spacer(Modifier.height(12.dp))
                             Row(verticalAlignment = Alignment.CenterVertically,
                                 horizontalArrangement = Arrangement.SpaceBetween,
                                 modifier = Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 20.dp)

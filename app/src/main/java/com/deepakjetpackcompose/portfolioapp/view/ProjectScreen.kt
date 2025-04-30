@@ -57,7 +57,7 @@ fun ProjectScreen(navController: NavController,modifier: Modifier = Modifier) {
                 techStack = lumiTech
             )
             Spacer(Modifier.height(70.dp))
-            LastScroll()
+            LastScroll(navController)
 
         }
 

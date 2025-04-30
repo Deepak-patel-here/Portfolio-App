@@ -99,7 +99,7 @@ fun MainScreen(navController: NavController,modifier: Modifier = Modifier) {
                         Spacer(Modifier.height(50.dp))
                         ProjectIntro(navController=navController)
                         Spacer(Modifier.height(30.dp))
-                        LastScroll()
+                        LastScroll(navController)
                     }
                 }
 

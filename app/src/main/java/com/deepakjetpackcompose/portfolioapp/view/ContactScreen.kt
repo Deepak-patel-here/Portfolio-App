@@ -13,13 +13,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.deepakjetpackcompose.portfolioapp.util.ContactForm
 import com.deepakjetpackcompose.portfolioapp.util.ContactText
 import com.deepakjetpackcompose.portfolioapp.util.LastScroll
 
 @Preview
 @Composable
-fun ContactScreen(modifier: Modifier = Modifier) {
+fun ContactScreen(navController: NavController,modifier: Modifier = Modifier) {
     Column(modifier = Modifier.fillMaxWidth()
         .background(MaterialTheme.colorScheme.surfaceContainerLow)
         .verticalScroll(rememberScrollState())
@@ -29,7 +30,7 @@ fun ContactScreen(modifier: Modifier = Modifier) {
         Spacer(Modifier.height(40.dp))
         ContactForm()
         Spacer(Modifier.height(50.dp))
-        LastScroll()
+        LastScroll(navController =navController )
 
     }
     
