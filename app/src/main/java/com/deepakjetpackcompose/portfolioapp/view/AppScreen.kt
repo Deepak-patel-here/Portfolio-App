@@ -130,7 +130,8 @@ fun AppScreen(darkViewModel: DarkViewModel,modifier: Modifier = Modifier) {
                                     tint = MaterialTheme.colorScheme.onSurface
                                 )
                             }
-
+                            Divider()
+                            Spacer(Modifier.height(12.dp))
                             Row(verticalAlignment = Alignment.CenterVertically,
                                 horizontalArrangement = Arrangement.SpaceBetween,
                                 modifier = Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 20.dp)
@@ -150,6 +151,7 @@ fun AppScreen(darkViewModel: DarkViewModel,modifier: Modifier = Modifier) {
                                     contentDescription = null,
                                     tint=MaterialTheme.colorScheme.onSurface)
                             }
+                            Spacer(Modifier.height(12.dp))
                         }
                     }
                 }

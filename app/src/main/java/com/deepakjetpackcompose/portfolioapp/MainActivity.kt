@@ -7,17 +7,20 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 import com.deepakjetpackcompose.portfolioapp.view.AboutMeScreen
 import com.deepakjetpackcompose.portfolioapp.view.AppScreen
 import com.deepakjetpackcompose.portfolioapp.view.MainScreen
 import com.deepakjetpackcompose.portfolioapp.viewmodel.DarkViewModel
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +30,14 @@ class MainActivity : ComponentActivity() {
 
             val darkViewModel: DarkViewModel by viewModels()
             val isDark = darkViewModel.isDarkMode.collectAsState()
+            val systemUiController = rememberSystemUiController()
+            systemUiController.setSystemBarsColor(
+                color = if (isDark.value) Color(0xFF191C20) else MaterialTheme.colorScheme.surface,
+                darkIcons = !isDark.value
+
+            )
+
+
             PortfolioAppTheme (darkTheme = isDark.value){
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     AppScreen(darkViewModel=darkViewModel,modifier = Modifier.padding(innerPadding))
