@@ -1,0 +1,36 @@
+package com.deepakjetpackcompose.portfolioapp.view
+
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import com.deepakjetpackcompose.portfolioapp.util.ContactForm
+import com.deepakjetpackcompose.portfolioapp.util.ContactText
+import com.deepakjetpackcompose.portfolioapp.util.LastScroll
+
+@Preview
+@Composable
+fun ContactScreen(modifier: Modifier = Modifier) {
+    Column(modifier = Modifier.fillMaxWidth()
+        .background(MaterialTheme.colorScheme.surfaceContainerLow)
+        .verticalScroll(rememberScrollState())
+        .padding(16.dp)) {
+        Spacer(Modifier.height(40.dp))
+        ContactText()
+        Spacer(Modifier.height(40.dp))
+        ContactForm()
+        Spacer(Modifier.height(50.dp))
+        LastScroll()
+
+    }
+    
+}
