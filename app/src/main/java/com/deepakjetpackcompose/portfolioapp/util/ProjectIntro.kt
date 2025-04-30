@@ -33,11 +33,11 @@ fun ProjectIntro(modifier: Modifier = Modifier) {
                 fontFamily = Comic
             )
             Spacer(Modifier.height(40.dp))
-            ProjectScreen(R.drawable.project1)
+            ProjectCard(R.drawable.project1)
             Spacer(Modifier.height(30.dp))
-            ProjectScreen(R.drawable.ainotes)
+            ProjectCard(R.drawable.ainotes)
             Spacer(Modifier.height(30.dp))
-            ProjectScreen(R.drawable.reminder)
+            ProjectCard(R.drawable.reminder)
             Spacer(Modifier.height(30.dp))
             SkillButton(onClick = {}, name = "More Projects")
         }
@@ -47,7 +47,7 @@ fun ProjectIntro(modifier: Modifier = Modifier) {
 
 
 @Composable
-fun ProjectScreen(img:Int,modifier: Modifier = Modifier) {
+fun ProjectCard(img:Int,modifier: Modifier = Modifier) {
     Card (modifier= Modifier){
         Image(
             painter = painterResource(img),

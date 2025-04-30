@@ -26,9 +26,9 @@ import com.deepakjetpackcompose.portfolioapp.R
 import com.deepakjetpackcompose.portfolioapp.ui.theme.Comic
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 
-@PreviewLightDark
+
 @Composable
-fun TopBar(modifier: Modifier = Modifier) {
+fun TopBar(onClick:()-> Unit,modifier: Modifier = Modifier) {
     PortfolioAppTheme {
         Row(
             modifier = modifier
@@ -46,7 +46,7 @@ fun TopBar(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold,
                 fontSize = 26.sp
             )
-            IconButton(onClick = {}) {
+            IconButton(onClick = {onClick()}) {
                 Image(
                     painter = painterResource(R.drawable.menuport),
                     contentDescription = null,

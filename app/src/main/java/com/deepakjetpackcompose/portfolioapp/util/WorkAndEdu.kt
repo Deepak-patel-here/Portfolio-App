@@ -39,7 +39,7 @@ fun WorkAndEdu(modifier: Modifier = Modifier) {
             Text("Experience & Education",
                 color = MaterialTheme.colorScheme.primary,
                 fontFamily = Comic,
-                fontSize = 35.sp)
+                fontSize = 30.sp)
 
             Spacer(Modifier.height(70.dp))
             WorkTemplate(img=R.drawable.education, task = "Education", desc = edu)

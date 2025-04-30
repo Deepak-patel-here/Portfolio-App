@@ -38,64 +38,68 @@ import com.deepakjetpackcompose.portfolioapp.util.versionSkill3
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
     PortfolioAppTheme {
-        Scaffold(
-            topBar = {
-                TopBar(modifier = Modifier.statusBarsPadding())
-            }
-        ) {innerPadding->
-            Column (modifier = Modifier
+
+        Column(
+            modifier = Modifier
                 .fillMaxSize()
                 .background(MaterialTheme.colorScheme.surfaceContainerLow)
-                .padding(innerPadding)
                 .padding(horizontal = 16.dp)
                 .verticalScroll(rememberScrollState())
-            ){
-                Box(modifier = Modifier.align(Alignment.CenterHorizontally).padding(top = 20.dp)){
-                    Column (modifier= Modifier,
-                        horizontalAlignment = Alignment.CenterHorizontally){
-                        Spacer(Modifier.height(30.dp))
-                        IntroText()
-                        Spacer(Modifier.height(15.dp))
-                        SummaryText()
-                        Spacer(Modifier.height(25.dp))
-                        Column (modifier=modifier.fillMaxWidth(),
-                            horizontalAlignment = Alignment.CenterHorizontally){
-                            ProjectButton()
-                            Spacer(Modifier.height(10.dp))
-                            DownLoadButton()
-                            Spacer(Modifier.height(20.dp))
-                            ShortIntro()
-                            Spacer(Modifier.height(50.dp))
-                            SkillText(
-                                skills = listOf(
-                                    Skill(
-                                        img = R.drawable.iphone,
-                                        skill = "Responsive Ui",
-                                        desc = responsiveSkill1
-                                    ),
-                                    Skill(
-                                        img = R.drawable.code,
-                                        skill = "Api Integration",
-                                        desc = ApiSkill2
-                                    ),
-                                    Skill(
-                                        img = R.drawable.github,
-                                        skill = "Version Control",
-                                        desc = versionSkill3
-                                    )
+        ) {
+            Box(
+                modifier = Modifier
+                    .align(Alignment.CenterHorizontally)
+                    .padding(top = 20.dp)
+            ) {
+                Column(
+                    modifier = Modifier,
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Spacer(Modifier.height(30.dp))
+                    IntroText()
+                    Spacer(Modifier.height(15.dp))
+                    SummaryText()
+                    Spacer(Modifier.height(25.dp))
+                    Column(
+                        modifier = modifier.fillMaxWidth(),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        ProjectButton()
+                        Spacer(Modifier.height(10.dp))
+                        DownLoadButton()
+                        Spacer(Modifier.height(20.dp))
+                        ShortIntro()
+                        Spacer(Modifier.height(50.dp))
+                        SkillText(
+                            skills = listOf(
+                                Skill(
+                                    img = R.drawable.iphone,
+                                    skill = "Responsive Ui",
+                                    desc = responsiveSkill1
+                                ),
+                                Skill(
+                                    img = R.drawable.code,
+                                    skill = "Api Integration",
+                                    desc = ApiSkill2
+                                ),
+                                Skill(
+                                    img = R.drawable.github,
+                                    skill = "Version Control",
+                                    desc = versionSkill3
                                 )
                             )
-                            Spacer(Modifier.height(50.dp))
-                            ProjectIntro()
-                            Spacer(Modifier.height(30.dp))
-                            LastScroll()
-                        }
+                        )
+                        Spacer(Modifier.height(50.dp))
+                        ProjectIntro()
+                        Spacer(Modifier.height(30.dp))
+                        LastScroll()
                     }
-
                 }
 
             }
+
         }
+
     }
-    
+
 }
