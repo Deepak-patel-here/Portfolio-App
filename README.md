@@ -32,10 +32,7 @@ Here you can add some screenshots of the app. To take a screenshot:
 - **Kotlin**: The language used for Android development.
 - **Navigation**: For handling navigation and transitions between different screens in the app.
 - **Material 3**: Provides the UI components and design system to follow modern Android design patterns.
-- **Koin**: Used for Dependency Injection.
-- **Firebase**: Used for user authentication (Google sign-in).
-- **ExoPlayer**: For media playback, used in the music player.
-- **Room**: For local data storage.
+
 
 ---
 
@@ -149,12 +146,11 @@ Contributions to the app are welcome! If you would like to contribute, please fo
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## Contact
 
-You can reach the creator of this app at [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile).
+You can reach the creator of this app at [Deepak Patel]((https://www.linkedin.com/in/deepak-patel-555671282/)).
+
+##Demo Video
+
+you can take a look of the demo video of this portfolio app ([https://drive.google.com/file/d/1S0D_8XsWgkBVKt3VcLjERcZwK7YQvM6Y/view?usp=sharing])
