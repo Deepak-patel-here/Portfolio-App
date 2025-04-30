@@ -28,6 +28,7 @@ import com.deepakjetpackcompose.portfolioapp.R
 import com.deepakjetpackcompose.portfolioapp.Skill
 import com.deepakjetpackcompose.portfolioapp.ui.theme.Comic
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
+import com.deepakjetpackcompose.portfolioapp.util.AboutSkill
 import com.deepakjetpackcompose.portfolioapp.util.ApiSkill2
 import com.deepakjetpackcompose.portfolioapp.util.ClickableEmail
 import com.deepakjetpackcompose.portfolioapp.util.Di
@@ -80,7 +81,7 @@ fun AboutMeScreen(modifier: Modifier = Modifier) {
             Spacer(Modifier.height(15.dp))
             ClickableEmail(email = emailId)
             Spacer(Modifier.height(70.dp))
-            SkillText(
+            AboutSkill(
                 skills = listOf(
                     Skill(
                         img = R.drawable.iphone,

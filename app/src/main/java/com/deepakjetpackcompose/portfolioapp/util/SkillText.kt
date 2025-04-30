@@ -46,15 +46,20 @@ fun SkillText(skills:List<Skill>, modifier: Modifier = Modifier) {
                     color = MaterialTheme.colorScheme.primary,
                     fontFamily = Comic
                 )
-            skills?.forEach { skill->
-                Spacer(Modifier.height(30.dp))
-                BoxSkill(img = skill.img, skill = skill.skill, desc = skill.desc)
-            }
+            SkillPrompt(skills)
             Spacer(Modifier.height(40.dp))
             SkillButton(onClick = {}, name = "More Skills")
         }
     }
 
+}
+
+@Composable
+fun SkillPrompt(skills:List<Skill>,modifier: Modifier = Modifier) {
+    skills.forEach { skill->
+        Spacer(Modifier.height(30.dp))
+        BoxSkill(img = skill.img, skill = skill.skill, desc = skill.desc)
+    }
 }
 
 
@@ -63,7 +68,10 @@ fun BoxSkill(img:Int,skill:String,desc:String,modifier: Modifier = Modifier) {
 
     Box(modifier = Modifier
         .fillMaxWidth()
-        .background(MaterialTheme.colorScheme.surfaceContainerHighest, shape = RoundedCornerShape(10.dp))
+        .background(
+            MaterialTheme.colorScheme.surfaceContainerHighest,
+            shape = RoundedCornerShape(10.dp)
+        )
         .clip(shape = RoundedCornerShape(10.dp))
         .padding(24.dp)
         ){
