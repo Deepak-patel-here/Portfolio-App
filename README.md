@@ -153,7 +153,7 @@ You can reach the creator of this app at([https://www.linkedin.com/in/deepak-pat
 
 ##Demo Video
 
-you can take a look of the demo video of this portfolio app ([https://drive.google.com/file/d/1S0D_8XsWgkBVKt3VcLjERcZwK7YQvM6Y/view?usp=sharing])
+you can take a look of the demo video of this portfolio app ([https://drive.google.com/file/d/18TOXmU2CfTh2L1R7ezVTZm30TG27z73A/view?usp=sharing])
 
 ## APK
 
