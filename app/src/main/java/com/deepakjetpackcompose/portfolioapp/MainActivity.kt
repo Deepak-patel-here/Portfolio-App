@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
+import com.deepakjetpackcompose.portfolioapp.view.AboutMeScreen
 import com.deepakjetpackcompose.portfolioapp.view.MainScreen
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             PortfolioAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MainScreen(modifier = Modifier.padding(innerPadding))
+                    AboutMeScreen(modifier = Modifier.padding(innerPadding))
                 }
             }
         }

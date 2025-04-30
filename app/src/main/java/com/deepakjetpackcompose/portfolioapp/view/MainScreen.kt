@@ -2,6 +2,7 @@ package com.deepakjetpackcompose.portfolioapp.view
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import com.deepakjetpackcompose.portfolioapp.R
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -18,7 +19,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import com.deepakjetpackcompose.portfolioapp.Skill
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
+import com.deepakjetpackcompose.portfolioapp.util.ApiSkill2
 import com.deepakjetpackcompose.portfolioapp.util.DownLoadButton
 import com.deepakjetpackcompose.portfolioapp.util.IntroText
 import com.deepakjetpackcompose.portfolioapp.util.LastScroll
@@ -28,6 +31,8 @@ import com.deepakjetpackcompose.portfolioapp.util.ShortIntro
 import com.deepakjetpackcompose.portfolioapp.util.SkillText
 import com.deepakjetpackcompose.portfolioapp.util.SummaryText
 import com.deepakjetpackcompose.portfolioapp.util.TopBar
+import com.deepakjetpackcompose.portfolioapp.util.responsiveSkill1
+import com.deepakjetpackcompose.portfolioapp.util.versionSkill3
 
 @PreviewLightDark
 @Composable
@@ -61,7 +66,25 @@ fun MainScreen(modifier: Modifier = Modifier) {
                             Spacer(Modifier.height(20.dp))
                             ShortIntro()
                             Spacer(Modifier.height(50.dp))
-                            SkillText()
+                            SkillText(
+                                skills = listOf(
+                                    Skill(
+                                        img = R.drawable.iphone,
+                                        skill = "Responsive Ui",
+                                        desc = responsiveSkill1
+                                    ),
+                                    Skill(
+                                        img = R.drawable.code,
+                                        skill = "Api Integration",
+                                        desc = ApiSkill2
+                                    ),
+                                    Skill(
+                                        img = R.drawable.github,
+                                        skill = "Version Control",
+                                        desc = versionSkill3
+                                    )
+                                )
+                            )
                             Spacer(Modifier.height(50.dp))
                             ProjectIntro()
                             Spacer(Modifier.height(30.dp))

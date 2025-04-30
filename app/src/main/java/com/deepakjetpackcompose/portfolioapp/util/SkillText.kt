@@ -29,11 +29,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.deepakjetpackcompose.portfolioapp.ui.theme.Comic
 import com.deepakjetpackcompose.portfolioapp.R
+import com.deepakjetpackcompose.portfolioapp.Skill
 import com.deepakjetpackcompose.portfolioapp.ui.theme.PortfolioAppTheme
 
 @Preview
 @Composable
-fun SkillText(modifier: Modifier = Modifier) {
+fun SkillText(skills:List<Skill>, modifier: Modifier = Modifier) {
 
     PortfolioAppTheme {
         Column(modifier = Modifier
@@ -45,13 +46,10 @@ fun SkillText(modifier: Modifier = Modifier) {
                     color = MaterialTheme.colorScheme.primary,
                     fontFamily = Comic
                 )
-
-            Spacer(Modifier.height(30.dp))
-            BoxSkill(img = R.drawable.iphone, skill = "Responsive UI",responsiveSkill1)
-            Spacer(Modifier.height(30.dp))
-            BoxSkill(img = R.drawable.code, skill = "Api Integration",ApiSkill2)
-            Spacer(Modifier.height(30.dp))
-            BoxSkill(img = R.drawable.github, skill = "Version Control",versionSkill3)
+            skills?.forEach { skill->
+                Spacer(Modifier.height(30.dp))
+                BoxSkill(img = skill.img, skill = skill.skill, desc = skill.desc)
+            }
             Spacer(Modifier.height(40.dp))
             SkillButton(onClick = {}, name = "More Skills")
         }
