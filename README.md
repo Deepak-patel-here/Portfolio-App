@@ -1,7 +1,7 @@
 
 # Portfolio App
 
-This is a **Portfolio App** built using **Jetpack Compose**, which showcases different sections including **About Me**, **Projects**, and the **Home Screen**. The app utilizes modern Android development practices, including **Navigation** for seamless screen transitions, **State Management**, and **Material 3 Design** for a polished and user-friendly UI.
+This is a **Portfolio App** built using **Jetpack Compose**, which showcases different sections including **About Me**, **Projects**,**Contact** and the **Home Screen**. The app utilizes modern Android development practices, including **Navigation** for seamless screen transitions, **State Management**, and **Material 3 Design** for a polished and user-friendly UI.
 
 ---
 
@@ -10,6 +10,7 @@ This is a **Portfolio App** built using **Jetpack Compose**, which showcases dif
 - **Home Screen**: The main landing page of the app, providing quick access to different sections of the portfolio.
 - **About Me**: A dedicated screen to introduce the app owner with details like biography, skills, and more.
 - **Projects**: A showcase of projects built by the app owner with detailed descriptions and possibly media related to the projects.
+- **Contact** : This helps user to contact with me.
 - **Navigation**: The app implements navigation to move between different sections using Jetpack Compose’s `NavHost` and `NavController`.
 - **Dark/Light Mode**: Supports toggling between dark and light themes based on user preference.
 - **Bottom Sheet**: A modal bottom sheet is included for quick navigation to different sections.
@@ -18,8 +19,12 @@ This is a **Portfolio App** built using **Jetpack Compose**, which showcases dif
 ---
 
 ## Screenshots
+![IMG-20250501-WA0009](https://github.com/user-attachments/assets/6850cd9e-d748-49e2-ab1b-2bc158e43391)
 
-Here you can add some screenshots of the app. To take a screenshot:
+![IMG-20250501-WA0008](https://github.com/user-attachments/assets/cc56840e-9f71-4906-95d9-324dcfaa5569)
+![IMG-20250501-WA0010](https://github.com/user-attachments/assets/d2ce61ae-e937-484b-94cd-e05933e566ac)
+
+![IMG-20250501-WA0011](https://github.com/user-attachments/assets/e1c5b074-5318-47b9-a767-ab26252ab80a)
 
 1. Run the app on an emulator or a physical device.
 2. Capture the screen and upload it here.
