@@ -19,15 +19,11 @@ This is a **Portfolio App** built using **Jetpack Compose**, which showcases dif
 ---
 
 ## Screenshots
-![IMG-20250501-WA0009](https://github.com/user-attachments/assets/6850cd9e-d748-49e2-ab1b-2bc158e43391)
+![IMG-20250501-WA0009](https://github.com/user-attachments/assets/6850cd9e-d748-49e2-ab1b-2bc158e43391) ![IMG-20250501-WA0008](https://github.com/user-attachments/assets/cc56840e-9f71-4906-95d9-324dcfaa5569)
 
-![IMG-20250501-WA0008](https://github.com/user-attachments/assets/cc56840e-9f71-4906-95d9-324dcfaa5569)
-![IMG-20250501-WA0010](https://github.com/user-attachments/assets/d2ce61ae-e937-484b-94cd-e05933e566ac)
 
-![IMG-20250501-WA0011](https://github.com/user-attachments/assets/e1c5b074-5318-47b9-a767-ab26252ab80a)
+![IMG-20250501-WA0010](https://github.com/user-attachments/assets/d2ce61ae-e937-484b-94cd-e05933e566ac) ![IMG-20250501-WA0011](https://github.com/user-attachments/assets/e1c5b074-5318-47b9-a767-ab26252ab80a)
 
-1. Run the app on an emulator or a physical device.
-2. Capture the screen and upload it here.
 
 ---
 
